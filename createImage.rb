@@ -13,16 +13,12 @@ end
 
 # Draw a vertical line of user-given color on a PNG at user-given position
 def draw_vertical_line(png, color, xPosition = 0)
-	(0...png.height).each do |yPosition|
-		png[xPosition, yPosition] = ChunkyPNG::Color(color)
-	end
+	png.polygon([xPosition, 0, xPosition, png.height], color)
 end
 
 # Draw a horizontal line of user-given color on a PNG at user-given position
 def draw_horizontal_line(png, color, yPosition = 0)
-	(0...png.width).each do |xPosition|
-		png[xPosition, yPosition] = ChunkyPNG::Color(color)
-	end
+	png.polygon([0, yPosition, png.width, yPosition], color)
 end
 
 # Currently draws a diagonal line from one corner to the other
