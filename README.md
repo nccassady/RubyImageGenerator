@@ -5,6 +5,7 @@ Fractal generator written in Ruby. Used to create fractals/random designs of any
 Feel free to send a pull request or message/email me with suggestions/fixes/updates/etc.
 
 ## TODO:
-* Add checkerboard function
+* ~~Add checkerboard function~~
 * Change diagonal functions to work from any position
-* Add comments
+* ~~Add comments~~
+* Add corner to center functions (e.g. Draw "V", "^", "<", ">")
